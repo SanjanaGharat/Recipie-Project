@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: hsl(312, 73%, 73%);
+  --clr-primary-hover: #063a29;
+  --clr-primary-dark: #039d69;
+  --clr-gray100: #032428;
+  --clr-gray200: #0d8bc2;
+  --clr-gray300: #2e6e20;
+  --clr-gray400: #290681;
+  --clr-gray500: #8c9621;
+  --radius: 0.2rem;
+}
+
+.card {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 20px var(--clr-gray200);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  background-color: #ffff;
+}
+
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 1rem;
+}
+
+.card__description {
+  padding: 0 1rem;
+}
+
+.card__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+  background: var(--clr-primary);
+  color: white;
+}
+
+.Search-section {
+  padding: 20px;
+  display: flex;
+  border-radius: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input[type="text"] {
+  width: 500px;
+  padding: 15px;
+  border-radius: 20px; /* Changed to make it round */
+  background-color: rgb(194, 180, 180);
+  border: 2px solid black;
+  color: #111;
+  font-size: 15px;
+  box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+  height: 58px;
+  /* transform: skew(-3deg, 1deg); */
+  font-family: "Knewave", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none; /* Add this to remove the default focus outline */
+}
+
+input[type="text"]::placeholder {
+  color: #fff; /* Placeholder color for better visibility */
+}
+
+button {
+  height: 58px;
+  font-size: 20px;
+  /* transform: skew(-3deg, 1deg); */
+  font-family: "Knewave", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: rgb(237, 222, 222);
+  border: 2px solid black;
+  color: #111;
+  padding: 10px;
+}
+
+.Cards-section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-btn {
+  align-self: last baseline;
+  background: #232323;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: rgb(33,33,39);
+  background: linear-gradient(34deg, rgba(33,33,39,1) 0%, rgba(7,7,9,1) 10%, rgba(39,39,39,1) 17%, rgba(41,45,48,1) 32%, rgba(41,45,48,1) 40%, rgba(12,13,15,1) 59%, rgba(37,43,45,1) 77%, rgba(42,45,48,1) 86%, rgba(20,20,22,1) 90%);
+  display: grid;
+  place-items: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  animation: 1.5s ease infinite alternate running shimmer;
+  background: linear-gradient(90deg, #FFE27D 0%, #64E3FF 30%, #9192FF 85%);
+  background-size: 200% 100%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: -2px -2px 10px rgba(255, 227, 126, 0.5), 2px 2px 10px rgba(144, 148, 255, 0.5);
+  color: #170F1E;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 670;
+  line-height: 24px;
+  overflow: hidden;
+  padding: 12px 24px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+button svg {
+  left: -20px;
+  opacity: 0.5;
+  position: absolute;
+  top: -2px;
+  transition: 0.5s cubic-bezier(.5,-0.5,.5,1.5);
+}
+
+button:hover svg {
+  opacity: 0.8;
+  transform: translateX(50px) scale(1.5);
+}
+
+button:hover {
+  transform: rotate(-3deg);
+}
+
+button:active {
+  transform: scale(0.95) rotate(-3deg);
+}
+
+@keyframes shimmer {
+  to {
+    background-size: 100% 100%;
+    box-shadow: -2px -2px 6px rgba(255, 227, 126, 0.5), 2px 2px 6px rgba(144, 148, 255, 0.5);
+  }
+}

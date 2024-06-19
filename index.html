@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="Search-section">
+      <input type="text" value="Enter food name" required />
+      <!-- <button placeholder="enter you food name">Search</button> -->
+      <button id="searchButton">
+        Search
+        <svg width="79" height="46" viewBox="0 0 79 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_618_1123)">
+          <path d="M42.9 2H76.5L34.5 44H2L42.9 2Z" fill="url(#paint0_linear_618_1123)"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_618_1123" x="0" y="0" width="78.5" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_618_1123"/>
+          </filter>
+          <linearGradient id="paint0_linear_618_1123" x1="76.5" y1="2.00002" x2="34.5" y2="44" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.6"/>
+            <stop offset="1" stop-color="white" stop-opacity="0.05"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      </button>
+    </div>
+    <div class="Cards-section">
+      <div class="card">
+        <div class="card__body">
+          <img
+            src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="card__image"
+          />
+          <h2 class="card__title">Pancakes</h2>
+          <p class="card__description">
+            Experience a delightful fusion of key ingredients, offering a harmonious blend of savory and sweet flavors in every bite. Perfect whether enjoyed as a meal or snack, it promises a satisfying culinary adventure.
+          </p>
+        </div>
+        <button class="card__btn">View Recipe</button>
+      </div>
+
+      <div class="card">
+        <div class="card__body">
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="card__image"
+          />
+          <h2 class="card__title">The Everyday Salad</h2>
+          <p class="card__description">
+            Take your boring salads up a knotch. This recipe is perfect for
+            lunch and only contains 5 ingredients!
+          </p>
+        </div>
+        
+        <button class="card__btn">View Recipe</button>
+        
+      </div>
+
+      <div class="card">
+        <div class="card__body">
+          <img
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="card__image"
+          />
+          <h2 class="card__title">Cake</h2>
+          <p class="card__description">
+            Explore a harmonious blend of flavors, crafted to deliver a satisfying culinary experience with every bite. Whether enjoyed as a meal or snack, it offers a delightful fusion of savory and sweet notes.
+          </p>
+        </div>
+        <button class="card__btn">View Recipe</button>
+      </div>
+
+      <div class="card">
+        <div class="card__body">
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="card__image"
+          />
+          <h2 class="card__title">Pizza</h2>
+          <p class="card__description">
+            Indulge in a culinary delight that combines savory and sweet flavors seamlessly, ensuring a satisfying experience whether enjoyed as a meal or snack.
+          </p>
+        </div>
+        
+        <button class="card__btn">View Recipe</button>
+      </div>
+      
+    </div>
+    <script>
+      document.getElementById("searchButton").addEventListener("click", function() {
+        console.log("click");
+      });
+    </script>
+  </body>
+</html>
